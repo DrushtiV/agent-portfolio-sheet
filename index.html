@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drushti Vagal — Agent Portfolio Sheet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="title-group">
+        <span class="sheet-icon">📊</span>
+        <div>
+          <h1>Drushti_Vagal_Portfolio_2026.xlsx</h1>
+          <p class="subtitle">AI/ML Engineer · Computer Vision · BI Developer · CE 2026</p>
+        </div>
+      </div>
+      <div class="agent-toolbar" id="agentToolbar"></div>
+      <div class="controls">
+        <button id="skipBtn" class="btn">Skip</button>
+        <button id="rebuildBtn" class="btn btn-primary">↻ Rebuild</button>
+      </div>
+    </header>
+
+    <div class="formula-bar">
+      <span class="cell-ref" id="cellRef">A1</span>
+      <span class="fx">fx</span>
+      <input type="text" id="formulaInput" readonly value="Click any cell after agents finish..." />
+    </div>
+
+    <div class="workspace">
+      <div class="sheet-container" id="sheetContainer">
+        <div class="cursor-layer" id="cursorLayer"></div>
+        <table class="sheet" id="portfolioTable">
+          <thead>
+            <tr>
+              <th class="row-num"></th>
+              <th data-col="A">A · Project</th>
+              <th data-col="B">B · Domain</th>
+              <th data-col="C">C · Records / Frames</th>
+              <th data-col="D">D · Latency (ms)</th>
+              <th data-col="E">E · Model Score (%)</th>
+              <th data-col="F">F · Impact Index</th>
+            </tr>
+          </thead>
+          <tbody id="sheetBody"></tbody>
+        </table>
+      </div>
+
+      <aside class="chart-panel" id="chartPanel">
+        <div class="chart-header" id="chartTitle">Awaiting Codex Agent...</div>
+        <div class="chart-bars" id="chartBars"></div>
+      </aside>
+    </div>
+
+    <footer class="status-bar">
+      <span id="activityLog">Initializing 8 autonomous portfolio agents...</span>
+      <span>GitHub: <a href="https://github.com/DrushtiV" target="_blank">@DrushtiV</a></span>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
